@@ -5,34 +5,106 @@
 
         <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
         <!-- Externally created CSS-->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-                    
-        <!-- Externally created jquery -->
-        <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/reset.css" media="all">
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
 
-
-    </head>
+        <!-- Font Awesome and Google fonts api-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <body>
-        <!--Header-->
-        <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <a href="#" class="btn btn-primary">Gmail</p>
-                        <a href="#" class="btn btn-primary">Images</p>
-                        <img class="img-responsive img-rounded" src="images/google.jpg" alt="google apps image">
-
-                    </div>
-                </div>
-            </div>
-
+        <!-- Header -->
+        <header class="header">
+            <div class="flex-container row p-3">               
+                <div class="mr-auto p-2"><a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></div>
+                <div class="p-2"><a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></div>
+                <div class="p-2"><a href="https://www.google.com/gmail/">Gmail</a></div>
+                <div class="p-2"><a href="https://www.google.com/imghp?hl=EN">Images</a></div>
+                <div class="p-2"><a href="https://workspace.google.com/"><img src="images/google-icon.jpg" alt="Google image icon" width="20" height="20"></a></div>
+                <div class="item-6"><a href="https://accounts.google.com/login"><button class="btn btn-light">Signin</button></a></div>
+            </div>                
         </header>
+
+        <!-- The Gig google logo-->
+        <div class="flex-container row p-3">           
+                <div class="m-auto media">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" class="google">
+                </div>
+        </div>
+        <!-- The search input-->
+        <div class="flex-container row p-3">
+            <form action="#">
+                <div class="form-group input-group input-group-lg">
+                    <input type="text" class="form-control" aria-label="Large" placeholder="Search" aria-describedby="inputGroup-sizing-sm">
+                </div>
+            </form>              
+        </div>
+
     </body>
 
 </html>
+
+
+
+<!-- 
+    <body>
+        <div class="container-fluid">
+            <header>
+                <nav class="nav">
+                    <ul class="leftalign">
+                        <li class="nav-item">
+                        <a class="nav-link" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
+                        </li>
+                    </ul>
+                    <ul class="rightalign">
+                        <li class="nav-item">
+                        <a class="nav-link" href="https://www.google.com/gmail/">Gmail</a>
+                        </li>
+                        <li class="nav-link">
+                        <a class="nav-link" href="https://www.google.com/imghp?hl=EN">Images</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://workspace.google.com/"><img src="/images/google-icon.jpg" alt="Google image icon" width="20" height="20"></a>
+                        </li>
+                        <li class="nav-link">
+                            <a class="nav-item" href="https://accounts.google.com/login"><button class="btn btn-primary">Signin</button></a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </header>
+         
+            <div class="container">
+                <div class="row">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" class="google">
+                </div>
+                <div class="row">
+                    <form>
+                        <input type="text">
+                        <button type="button" class="micbutton"></button>
+                        <button type="button" class="magbutton"></button>
+                    </form>
+                </div>
+                <div class="row">
+                    <ul class="center">
+                        <li><button class="searchbutton">Google Search</button></li>
+                        <li><button class="searchbutton">I'm Feeling Lucky</button></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+</html>
+
+-->
+
