@@ -85,13 +85,15 @@ input:hover {
 }
 
 .top-foot {
-    margin-top: 110px;
+    margin-top: 120px;
+    padding-top: 20px;
+    padding-bottom: 8px;
 }
 
 .top-foot, .btn-foot {
     display: block;
     background-color: rgb(235, 235, 235);
-    border-width: 34px;
+    border-width: 1px;
     width: 100%;
 }
 .btn-foot {

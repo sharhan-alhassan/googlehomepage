@@ -1,51 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Google Homepage</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+            <!-- Bootstrap CDN -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- Externally created CSS-->
+            <link rel="stylesheet" type="text/css" href="css/reset.css" media="all">
+            <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    
+            <!-- Font Awesome and Google fonts api-->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
 
-        <!-- Bootstrap CDN -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-        <!-- Externally created CSS-->
-        <link rel="stylesheet" type="text/css" href="css/reset.css" media="all">
-        <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
-
-        <!-- Font Awesome and Google fonts api-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <body>
-        <!-- Header -->
-        <header class="header">
-            <div class="flex-container row p-3">               
-                <div class="mr-auto p-2"><a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></div>
-                <div class="p-2"><a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></div>
-                <div class="p-2"><a href="https://www.google.com/gmail/">Gmail</a></div>
-                <div class="p-2"><a href="https://www.google.com/imghp?hl=EN">Images</a></div>
-                <div class="p-2"><a href="https://workspace.google.com/"><img src="images/google-icon.jpg" alt="Google image icon" width="20" height="20"></a></div>
-                <div class="item-6"><a href="https://accounts.google.com/login"><button class="btn btn-light">Signin</button></a></div>
-            </div>                
-        </header>
-
-        <!-- The Gig google logo-->
-        <div class="flex-container row p-3">           
-                <div class="m-auto media">
-                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" class="google">
+<body>
+        <!-- Google nav icons-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4 pt-2">
+                    <div class="d-flex justify-content-start">
+                        <ul class="nav-1">
+                            <li><a href="https://about.google/?utm_source=google-GH&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
+                            <li><a href="https://store.google.com/">Store</a></li>
+                        </ul>
+                    </div>
                 </div>
+                <div class="col-sm-4 offset-sm-4 pt-2">
+                    <div class="d-flex flex-row-reverse">
+                        <ul class="nav-2 d-flex flex-row-reverse">
+                            <li class="left"><a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/">Signin</a></li>
+                            <li><a href="https://www.google.com.gh/intl/en/about/products?tab=wh"><img src="images/google-icon.jpg" alt="Google image icon" width="20" height="20"></li>
+                            <li><a href="https://www.google.com.gh/imghp?hl=en&tab=wi&authuser=0&ogbl">Images</a></li>
+                            <li><a href="https://www.google.com/gmail/">Gmail</a></li>
+                        </ul>
+                    </div>
+                </div>       
+            </div>
         </div>
-        <!-- The search input-->
-        <div class="flex-container row p-3">
-            <form action="#">
-                <div class="form-group input-group input-group-lg">
-                    <input type="text" class="form-control" aria-label="Large" placeholder="Search" aria-describedby="inputGroup-sizing-sm">
+        <!-- Google Image and search bar-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="google-image image-fluid d-flex justify-content-center">
+                        <a href="https://www.google.com/search?sxsrf=ALeKk01U97otXy0MHsh1jQgqWJfrbXT7xQ:1607215284579&q=December+global+holidays&oi=ddle&ct=173710363&hl=en&sa=X&ved=0ahUKEwih1vPAj7jtAhUFcBQKHTRkBbAQPQgN">
+                        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" class="google"></a>
+                    </div>
                 </div>
-            </form>              
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="search-bar d-flex justify-content-center">
+                        <form action="http://www.google.com/search?q=%s">
+                            <input type="text">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!--Two messages--> 
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="d-flex justify-content-center pt-2">
+                        <div class="message-1">
+                            <a href="https://www.google.com/"><button type="button" class="btn btn-light">Google Search</button></a>
+                        </div>
+                        <div class="message-2">
+                            <a href="https://www.google.com/doodles/"><button type="button" class="btn btn-light">I'm Feeling Lucky</button></a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div> 
+        <!-- Google offered in-->   
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 pt-2">
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <p>Google offered in: <a href="https://www.google.com/setprefs?sig=0_t_OYuzhhd0aE9eNnEpe1pseIqKo%3D&hl=en&source=homepage&sa=X&ved=0ahUKEwjT0LyWl7jtAhWOmBQKHcdID4MQ2ZgBCA8">English</a> <a href="https://www.google.com/setprefs?sig=0_t_OYuzhhd0aE9eNnEpe1pseIqKo%3D&hl=ha&source=homepage&sa=X&ved=0ahUKEwjT0LyWl7jtAhWOmBQKHcdID4MQ2ZgBCBA">Hausa</a> <a href="https://www.google.com/setprefs?sig=0_t_OYuzhhd0aE9eNnEpe1pseIqKo%3D&hl=gaa&source=homepage&sa=X&ved=0ahUKEwiHlOfUl7jtAhXk6OAKHYbVBGwQ2ZgBCBM">Ga</a> <a href="https://www.google.com/setprefs?sig=0_t_OYuzhhd0aE9eNnEpe1pseIqKo%3D&hl=ee&source=homepage&sa=X&ved=0ahUKEwj8hPeMmLjtAhULDxQKHaWDCtYQ2ZgBCBI">Ewe</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+        <!-- below bar-->
+        <div class="container-fluid top-foot">
+            <div class="row">
+                <div class="col-lg-12 pt-2">
+                    <div class="d-flex justify-content-start">
+                        <div class="mr-auto">
+                            <h5>Ghana</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-    </body>
-
+        <div class="container-fluid btn-foot">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="d-flex justify-content-start"> 
+                        <ul>
+                            <li><a href="https://www.google.com/intl/en_gh/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+                            <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></li>
+                            <li><a href="https://about.google/?utm_source=google-GH&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
+                            <li><a href="https://google.com/search/howsearchworks/?fg=1">How Search works</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="d-flex flex-row-reverse mt-auto">
+                        <ul>
+                            <li><a href="https://policies.google.com/privacy?hl=en-GH&fg=1">Privacy</a></li>
+                            <li><a href="https://policies.google.com/terms?hl=en-GH&fg=1">Terms</a></li>
+                            <li><a href="https://www.google.com/preferences?hl=en">Settings</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>  
+</body>   
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
 </html>
-
