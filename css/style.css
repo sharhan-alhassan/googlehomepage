@@ -6,10 +6,23 @@ li {
     margin-top: 15px;
 }
 
-a {
-    font-size: 20px;
+h5 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+li a {
+    font-size: 15px;
     line-height: 12px;
     color: black;
+}
+
+div p a {
+    color: #609;
 }
 
 .nav-1 {
@@ -37,14 +50,52 @@ input {
     margin: 0 50px 0 50px;
     padding: 0 50px 0 50p;
     height: 46px;
-    width: 304px;
+    width: 600px;
     border-radius: 25px;
     border: 1px solid #dfe1e5;
     background: #fff;
     font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-rendering: auto;
+    letter-spacing: normal;
+    text-transform: none;
+    text-align: start;
+    text-shadow: none;
+    appearance: textfield;
+    cursor: text;
+}
+input[type="text"]{
+    outline: none;
+}
+
+input:hover {
+    -webkit-box-shadow: 29px -22px 74px 15px #dbcbda; 
+    box-shadow: 29px -22px 74px 15px #ddd2dd;
+    opacity: 0.5;
+}
+
+.message-1 {
+    padding-right: 30px;
 }
 
 .message-row {
     padding-top: 20px;
-    margin-top: 10px;
+    margin-top: 20px 0 20px 0;
 }
+
+.top-foot {
+    margin-top: 110px;
+}
+
+.top-foot, .btn-foot {
+    display: block;
+    background-color: rgb(235, 235, 235);
+    border-width: 34px;
+    width: 100%;
+}
+.btn-foot {
+    border-top: 0.1px solid grey;
+}
+
+/* media queries */
